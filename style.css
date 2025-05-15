@@ -1,62 +1,86 @@
+/* Reset and Base Styles */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f9fb;
+  color: #333;
   line-height: 1.6;
-  background-color: #2e3b55;
-  color: #f2f2f2;
-  scroll-behavior: smooth;
-  padding-top: 70px; /* for fixed navbar */
 }
 
+/* Navbar */
 .navbar {
-  background-color: #1f2a38;
+  background-color: #1c3a4c;
+  padding: 1rem 0;
+  color: white;
+}
+.navbar .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
-
-.logo {
-  font-size: 1.8rem;
+.navbar .logo {
   font-weight: bold;
-  color: #f8a58d;
+  font-size: 1.5rem;
 }
-
-.nav-links {
+.navbar .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 20px;
 }
-
-.nav-links li a {
+.navbar .nav-links a {
+  color: white;
   text-decoration: none;
-  color: #f8a58d;
-  font-weight: bold;
-  transition: color 0.3s ease;
+  font-weight: 500;
+}
+.navbar .nav-links a:hover {
+  border-bottom: 2px solid #ffa500;
 }
 
-.nav-links li a:hover {
-  color: #ffcab0;
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: #e9f1f7;
+}
+.hero h1 {
+  font-size: 3rem;
+  color: #1c3a4c;
+}
+.hero p {
+  font-size: 1.2rem;
+  color: #555;
 }
 
-.section {
-  padding: 80px 40px;
-  min-height: 100vh;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+/* Main Content */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 20px;
+}
+section {
+  margin-bottom: 3rem;
+}
+section h2 {
+  font-size: 2rem;
+  color: #1c3a4c;
+  margin-bottom: 0.5rem;
+}
+section p {
+  font-size: 1rem;
+  color: #444;
 }
 
-.section h1 {
-  margin-bottom: 20px;
-  font-size: 2.5rem;
-  color: #ffcab0;
+/* Footer */
+.footer {
+  background-color: #1c3a4c;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
 }
